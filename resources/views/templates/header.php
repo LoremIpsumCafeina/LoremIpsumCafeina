@@ -15,8 +15,19 @@
         <i class="search link icon"></i>
       </div>
     </div>
-    <a class="ui item">
+    @guest
+    <a href="{{ route('login') }}" class="ui item">Login</a>
+    <a href="{{ route('register') }}" class="ui item">Register</a>
+    @else
+    <a href="#" class="dropdown-toggle ui item" data-toggle="dropdown" role="button" aria-expanded="false" aria-haspopup="true">
+        {{ Auth::user()->name }} <span class="caret"></span>
+    </a>
+    <a class="class="ui item""
+    href="{{ route('logout') }}"
+    onclick="event.preventDefault();
+    document.getElementById('logout-form').submit();">
       Logout
     </a>
+    @endguest
   </div>
 </div>
