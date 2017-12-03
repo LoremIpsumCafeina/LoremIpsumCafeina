@@ -23,7 +23,7 @@ body {
 
 					<div class="form-group{{ $errors->has('email') ? ' has-error' : '' }}">
 						<div class="col-md-7  col-md-offset-3">
-							<img src="#" /><input id="email" type="email" class="form-control border-input input-color" name="email" value="{{ old('email') }}" placeholder="Entre com sua matrícula"
+							<img src="#" /><input id="email" type="text" class="form-control border-input input-color" name="numero_matricula" value="{{ old('email') }}" placeholder="Entre com sua matrícula"
 							 required autofocus> @if ($errors->has('email'))
 							<span class="help-block">
                                         <strong>{{ $errors->first('email') }}</strong>
@@ -40,7 +40,11 @@ body {
                                     </span> @endif
 						</div>
 					</div>
-
+                    @if (isset($retorno))
+                    <div id="esconder_esta_div" class="col-md-6 col-md-offset-5">
+                    {{$retorno}}
+                    </div>
+                    @endif
 					<div class="form-group">
 						<div class="col-md-6 col-md-offset-5">
 							<a class="btn btn-link" style="color: white" href="{{ route('password.request') }}">
@@ -61,5 +65,6 @@ body {
 		</div>
 	</div>
 </div>
+
 <div class="background-login"></div>
 @endsection
