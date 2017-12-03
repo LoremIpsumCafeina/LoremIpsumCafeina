@@ -43,9 +43,9 @@
     color: white;
 }
 .btn-full:hover {
-    background: white;
+    background: #1c242f;
     border: 1px solid #fb2a86;
-    color: #fb2a86;
+    color: white;
 }
 
 .background-gradient {
