@@ -59,3 +59,30 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8b2fb5', end
 .background-gradient a {
     color:white;
 }
+
+.container-full {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    background: white;
+    top: 0px;
+}
+
+.feed {
+    padding-top: 10vh;
+    padding-left: 2vh;
+}
+
+.card-div {
+    height: 20vh;
+    width:20vw;
+}
+
+.card-div .ui-card .content {
+    color: #fb2a86;
+}
+
+.img-card {
+    width:100%;
+    height:10vh;
+}

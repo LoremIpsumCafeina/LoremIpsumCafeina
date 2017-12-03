@@ -21,3 +21,5 @@ Route::get('/logar', 'HomeController@login');
 Auth::routes();
 
 Route::get('/home', 'HomeController@home');
+Route::get('/home2', 'HomeController2@home');
+Route::get('/content', 'Content@content');

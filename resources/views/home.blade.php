@@ -1,5 +1,14 @@
 @extends('layouts.app')
-
+<link rel="stylesheet" href="../../assets/css/home.css" type="text/css"/>
+<style>
+.container-full {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    background: white;
+    top: 0px;
+}
+</style>
 @section('content')
 <div class="container">
     <div class="row">

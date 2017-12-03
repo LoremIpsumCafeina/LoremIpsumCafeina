@@ -1,23 +1,11 @@
-@extends('layouts.app') @section('content')
-<link href="{{ asset('css/login.css') }}" rel="stylesheet">
-<style>
-.background-login {
-    background: #1c242f;
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    width: 100%;
-    height: 100%;
-}
-body {
-    background: #1c242f!important;
-}
-</style>
+@extends('layouts.app')
+@section('content')
+<link rel="stylesheet" href="../../assets/css/login.css" type="text/css"/>
 <div class="container">
 	<div class="row">
 		<div class="col-md-8 col-md-offset-2">
 			<div class="panel-body">
-            <div class="panel-heading"><img src="{{ asset('images/login2.png') }}" class="logo"/></div>
+            <div class="panel-heading"><img src="#" class="logo"/></div>
 				<form class="form-horizontal" method="POST" action="{{ route('login') }}">
 					{{ csrf_field() }}
 
