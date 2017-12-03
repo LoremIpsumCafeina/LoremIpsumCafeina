@@ -12,6 +12,9 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/semantic.css') }}" rel="stylesheet">
+    <!-- script -->
+    <script src="{{ asset('js/semantic.js') }}"></script>
 </head>
 <body>
     <div id="app">
@@ -38,8 +41,6 @@
                     <ul class="nav navbar-nav">
                         &nbsp;
                     </ul>
-
-@yield(templates/header.php)
 
                     <!-- Right Side Of Navbar -->
                     <ul class="nav navbar-nav navbar-right">
