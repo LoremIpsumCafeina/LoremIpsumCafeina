@@ -39,6 +39,8 @@
                         &nbsp;
                     </ul>
 
+@yield(templates/header.php)
+
                     <!-- Right Side Of Navbar -->
                     <ul class="nav navbar-nav navbar-right">
                         <!-- Authentication Links -->
