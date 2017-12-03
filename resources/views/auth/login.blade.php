@@ -18,7 +18,7 @@ body {
 		<div class="col-md-8 col-md-offset-2">
 			<div class="panel-body">
             <div class="panel-heading"><img src="#" class="logo"/></div>
-				<form class="form-horizontal" method="POST" action="{{ route('login') }}">
+				<form class="form-horizontal" method="POST" action="/logar">
 					{{ csrf_field() }}
 
 					<div class="form-group{{ $errors->has('email') ? ' has-error' : '' }}">
