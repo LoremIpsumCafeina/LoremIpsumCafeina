@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Support\Facades\DB;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class LogarController extends Controller
 {
@@ -27,10 +28,12 @@ class LogarController extends Controller
     }
 
     public function logar(Request $request){
-       $user = DB::table('users')->get()->toArray();
+       $user = DB::table('aluno')->get()->toArray();
 
        if($request->input('numero_matricula') == $user[1]->numero_matricula && $request->input('password') == $user[1]->password){
-            return view('content.content');
+            Auth::user();
+            app('App\Http\Controllers\ContentController')->content($user[1]->id);
+            return view('content.content')->with('retorno', 'Login ou senha incorretos');
        } else {
             return view('auth.login')->with('retorno', 'Login ou senha incorretos');
        }

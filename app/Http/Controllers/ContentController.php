@@ -27,7 +27,8 @@ class ContentController extends Controller
         return view('home');
     }
 
-    public function content(){
-    	
+    public function content($id_aluno){
+    	$dados = array('1', 'string');
+    	return $dados;
     }
 }
