@@ -16,7 +16,8 @@
 	<link href="{{ asset('css/semantic.css') }}" rel="stylesheet">
 	<link href="{{ asset('css/original.css') }}" rel="stylesheet">
 	<!-- script -->
-	<script src="{{ asset('js/semantic.js') }}"></script>
+	<script src="{{ asset('js/jquery-3.2.1.slim.min.js') }}"></script>
+    <script src="{{ asset('js/semantic.js') }}"></script>
 	<style>
 		body {
 			background: #1c242f;

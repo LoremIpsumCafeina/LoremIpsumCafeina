@@ -29,10 +29,10 @@ class LogarController extends Controller
     public function logar(Request $request){
        $user = DB::table('users')->get()->toArray();
 
-       if($request->input('email') == $user[1]->email && $request->input('password') == $user[1]->password){
+       if($request->input('numero_matricula') == $user[1]->numero_matricula && $request->input('password') == $user[1]->password){
             return view('content.content');
        } else {
-            Redirect::back();
+            return view('auth.login')->with('retorno', 'Login ou senha incorretos');
        }
     }
 }
