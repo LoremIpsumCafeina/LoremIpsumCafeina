@@ -20,6 +20,4 @@ Route::get('/logar', 'HomeController@login');
 
 Auth::routes();
 
-Route::get('/home', function(){
-	echo "string";
-});
+Route::get('/home', 'HomeController@home');
