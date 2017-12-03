@@ -21,3 +21,4 @@ Route::post('/logar', 'LogarController@logar');
 
 
 Route::get('/home', 'HomeController@home');
+Route::get('/content', 'ContentController@content');
